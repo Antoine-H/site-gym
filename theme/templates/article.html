@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block meta_extra %}
+	{% if article.stylesheets %}
+		{% for stylesheet in article.stylesheets %}
+			{{ stylesheet }}
+		{% endfor %}
+	{% endif %}
+{% endblock %}
+{% block body_extra %}
+{% if article.javascripts %}
+	{% for javascript in article.javascripts %}
+		{{ javascript }}
+	{% endfor %}
+{% endif %}
+{% endblock %}
+{% block title %}{{ article.title }}{%endblock%}
+
+{% block content %}
+
+<!-- Wrapper -->
+	<section id="wrapper">
+
+		<!-- Content -->
+			<div class="wrapper style1">
+
+				<header class="article">
+					<div class="image"><img src="{{ article.image }}" alt="" /></div>
+					<div class="inner">
+						<p class="date">{{ article.locale_date }}</p>
+						<h2 class="major">
+							{{ article.title }}
+							<span>{{ article.accroche }}</span>
+						</h2>
+					</div>
+				</header>
+
+				<div class="inner">
+					{{ article.content }}
+				</div>
+			</div>
+
+	</section>
+
+{% endblock %}

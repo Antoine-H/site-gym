@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block meta_extra %}
+    {% if page.og_url %}<meta property="og:url" content="{{ page.og_url}}" />{% endif %}
+    {% if page.og_type %}<meta property="og:type" content="{{ page.og_type}}" />{% endif %}
+    {% if page.og_title %}<meta property="og:title" content="{{ page.og_title}}" />{% endif %}
+    {% if page.og_description %}<meta property="og:description" content="{{ page.og_description}}" />{% endif %}
+    {% if page.og_image %}<meta property="og:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ page.og_image}}" />{% endif %}
+    	{% if page.stylesheets %}
+    		{% for stylesheet in page.stylesheets %}
+    			{{ stylesheet }}
+    		{% endfor %}
+    	{% endif %}
+{% endblock %}
+
+{% block body_extra %}
+{% if page.javascripts %}
+	{% for javascript in page.javascripts %}
+		{{ javascript }}
+	{% endfor %}
+{% endif %}
+{% endblock %}
+
+{% block content %}
+    {% import 'translations.html' as translations with context %}
+    {{ translations.translations_for(page) }}
+
+    {% if page.template_type == 'full-html' %}
+    {{ page.content }}
+    {% elif page.template_type == 'map' %}
+      <section id="wrapper">
+          <div class="wrapper style1">
+              {{ page.content }}
+          </div>
+      </section>
+    {% else %}
+    <!-- Wrapper -->
+      <section id="wrapper">
+
+        <!-- Content -->
+          <div class="wrapper style1">
+
+            <header class="article">
+              {% if page.image %}
+              <div class="image"><img src="{{ page.image }}" alt="" /></div>
+              {% endif %}
+              <div class="inner">
+                <h2 class="major">
+                  {{ page.title }}
+                  <span>{{ page.accroche }}</span>
+                </h2>
+              </div>
+            </header>
+
+            <div class="inner">
+              {{ page.content }}
+              {% if page.image and page.image_link and page.image_author and page.image_license %}
+              <em>L'image qui illustre cet article est un travail de <a href="{{ page.image_link }}">{{ page.image_author}}</a> proposé sous license {{ page.image_license }}. Merci !</em>
+              {% endif %}
+            </div>
+          </div>
+
+      </section>
+    {% endif %}
+{% endblock %}

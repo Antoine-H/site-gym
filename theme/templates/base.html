@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="{{ DEFAULT_LANG }}" prefix="og: http://ogp.me/ns#">
+  <head>
+  {% block head %}
+    <title>{{ SITENAME }} — {% block title %}{% endblock title %}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    {% block meta_extra %}{% endblock %}
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" />
+    <!--[if lte IE 8]><script src="{{ SITEURL }}/theme/js/ie/html5shiv.js"></script><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="{{ SITEURL }}/theme/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="{{ SITEURL }}/theme/css/ie9.css" /><![endif]-->
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+    <link rel="icon" type="image/x-icon" href="{{ SITEURL }}/theme/images/favicon.ico" />
+  {% endblock head %}
+  </head>
+  <body>
+
+    <!-- Page Wrapper -->
+      <div id="page-wrapper">
+
+        <!-- Header -->
+        {% if output_file.split('/')[-1].split('.')[0] == "index" %}
+          <header id="header" class="alt">
+        {% else %}
+          <header id="header">
+        {% endif %}
+            <h1>
+              <img src="{{ SITEURL }}/theme/images/logo_min.svg" alt="Logo">
+              <a href="index.html">USJA gymnastique masculine</a>
+            </h1>
+            <nav class="menu-wide">
+                {% for title, link, _ in MENUITEMS %}
+                <a href="{{ link }}"{% if link == '/' + output_file %} class="menu-{{ type }} active"{% endif %}>{{ title }}</a>
+                {% endfor %}
+            </nav>
+            <nav class="menu-mobile">
+                {% for title, link, type in MENUITEMS %}
+                {% if type == "mobile" %}
+                <a href="{{ link }}"{% if link == '/' + output_file %} class="menu-{{ type }} active"{% endif %}>{{ title }}</a>
+                {% endif %}
+                {% endfor %}
+            </nav>
+          </header>
+
+        {% block content %}{% endblock %}
+
+        <!-- Contact -->
+          <section id="contact" class="inverse">
+            <div class="inner">
+              <h2 class="major">Contactez-nous</h2>
+              <ul class="contact">
+                <li class="fa-home">
+                  <strong>USJA gymnastique</strong><br />
+                  <a href = "infos.html#map">
+                  10 rue Victor Hugo<br />
+                  44470 CARQUEFOU
+                  </a>
+                </li>
+                <li class="fa-clock-o">
+                  <strong>Entraînements</strong><br />
+                  Mardi de 17h à 19h30 <br />
+                  Vendredi de 17h45 à 19h45.<br />
+                </li>
+              </ul>
+              <ul class="contact">
+                <li class="fa-phone">
+                  <a href="tel:0789413634">07 89 41 36 34</a><br />
+                </li>
+                <li class="fa-envelope">
+                  <a href="mailto:marchais.bernard-at-orange.fr">marchais.bernard-at-orange.fr</a>
+                </li>
+                <!-- <li class="fa-facebook"><a href="https://www.facebook.com/USJA-carquefou-gymnastique-masculine-377259829070207/">facebook.com/USJA-carquefou-gymnastique-masculine</a></li> -->
+              </ul>
+
+              <ul class="copyright">
+                <li><i class="fa fa-copyright fa-flip-horizontal"></i> USJA gymnastique masculine</li>
+                <li>Basé sur <a href="http://html5up.net">HTML5 UP</a> et <a href="https://www.vieuxsinge.com/">Brasserie du Vieux Singe</a></li>
+                <li>Logo mis à jour par <a href="https://www.behance.net/Fahro">Fahro</a></li>
+                <li><a href="https://github.com/Antoine-H/site-gym"><i class="fa fa-github"></i></a></li>
+
+              </ul>
+            </div>
+          </section>
+
+      </div>
+
+    <!-- Scripts -->
+      <script src="{{ SITEURL }}/theme/js/skel.min.js"></script>
+      <script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
+      <script src="{{ SITEURL }}/theme/js/jquery.scrollex.min.js"></script>
+      <script src="{{ SITEURL }}/theme/js/util.js"></script>
+      <!--[if lte IE 8]><script src="{{ SITEURL }}/theme/js/ie/respond.min.js"></script><![endif]-->
+      <script src="{{ SITEURL }}/theme/js/main.js"></script>
+
+    {% block body_extra %}{% endblock %}
+  </body>
+</html>
