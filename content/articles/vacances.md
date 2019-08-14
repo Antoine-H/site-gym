@@ -1,5 +1,5 @@
 Title: Vacances
-Slug: un-exemple
+Slug: vacances
 Date: 2019-08-14
 Accroche: Reprise des entraînements le 3 septembre
 image: /images/vacances/vacances.jpg
