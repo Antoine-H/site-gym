@@ -1,6 +1,7 @@
 #map {
     height: 500px;
     margin-bottom: 20px;
+    /* Set a background image for non-js users. */
     overflow: hidden;
     background-size: cover;
     background-position: center;

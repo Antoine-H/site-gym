@@ -12,3 +12,6 @@ L.marker([47.28177112753235, -1.481957844121362]).addTo(map)
     .bindPopup('Salle du tremplin')
     .openPopup();
 
+//Remove the background image that was set for non-js users.
+$("#map").css("background-image", "url('')");
+
