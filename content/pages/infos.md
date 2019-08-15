@@ -1,4 +1,4 @@
-Title: Infos sur le club
+Title: À propos du club
 Slug: infos
 save_as: infos.html
 image: /images/infos/club.jpg
@@ -23,5 +23,10 @@ Les documents suivants vous seront demandés pour l'inscription :
 
 ![Salle extérieur](/images/infos/salle_exterieur.jpg){: .image .center}
 
-<div id="map" class="map_fill"> </div>
+<div id="map"> </div>
+
+## Le bureau
+
+- Bernard Marchais *Président*
+- Frédéric Le Moal *Entraîneur*
 
