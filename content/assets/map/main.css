@@ -1,5 +1,9 @@
 #map {
     height: 500px;
     margin-bottom: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/images/infos/map.png');
 }
 
