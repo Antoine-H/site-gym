@@ -23,5 +23,5 @@ Les documents suivants vous seront demandés pour l'inscription :
 
 ![Salle extérieur](/images/infos/salle_exterieur.jpg){: .image .center}
 
-<div id="map"></div>
+<div id="map" class="map_fill"> </div>
 

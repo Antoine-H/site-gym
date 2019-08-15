@@ -4099,3 +4099,11 @@
 #page-wrapper img {
     max-width: 100%;
 }
+
+.map_fill {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/images/infos/map.png');
+}
+
