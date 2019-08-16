@@ -29,4 +29,5 @@ Les documents suivants vous seront demandés pour l'inscription :
 
 - Bernard Marchais *Président*
 - Frédéric Le Moal *Entraîneur*
+- Antonin Gastineau *Juge*
 
