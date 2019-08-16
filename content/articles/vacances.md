@@ -2,7 +2,8 @@ Title: Vacances
 Slug: vacances
 Date: 2019-08-14
 Accroche: Reprise des entraînements le 3 septembre à 17h30
-image: /images/vacances/vacances.jpg
+Image: /images/vacances/vacances.jpg
+Authors: Antoine
 
 ## Vacances
 

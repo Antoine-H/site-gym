@@ -2,7 +2,8 @@ Title: Inscriptions
 Slug: inscriptions
 Date: 2019-08-16
 Accroche: Forum des associations le samedi 7 septembre de 9h30 à 12h30
-image: /images/inscriptions/inscriptions.jpg
+Image: /images/inscriptions/inscriptions.jpg
+Authors: Antoine
 
 Vous pourrez inscrire vos enfants pour la saison 2019/2020 au [forum des
 associations](https://www.carquefou.fr/agenda/forum-des-associations-2019/) le
