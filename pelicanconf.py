@@ -7,7 +7,7 @@ AUTHORS = (
 )
 
 SITENAME = 'Carquefou gymnastique masculine'
-SITEURL = 'https://antoine.huchet.me'
+SITEURL = 'https://gym.carquefou.fr'
 
 PATH = 'content'
 
