@@ -1,20 +1,132 @@
-\documentclass[a4paper,11pt]{article}
-\usepackage[pdftex]{hyperref}
+\documentclass[french]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{svg}
 
-\newdimen\longline
-\longline=\textwidth\advance\longline-4cm
+\parindent0pt
+\newsavebox\TBox{}
 
-\def\LayoutTextField#1#2{#2} % override default in hyperref
+\title{USJA CARQUEFOU \textendash{} Gymnastique Masculine \vspace{-3.5ex}}
 
-\def\lbl#1{\hbox to 4cm{#1\dotfill\strut}}%
-\def\labelline#1#2{\lbl{#1}\vbox{\hbox{\TextField[name=#1,width=#2]{\null}}\kern2pt\hrule}}
+\date{\includesvg[width=1.8cm]{logo}}
+\author{}
 
-\def\q#1{\hbox to \hsize{\labelline{#1}{\longline}}\vskip1.4ex}
+\pagenumbering{gobble}
 
 \begin{document}
-  \begin{Form}
-    \q{First Name}
-    \q{Last Name}
-    \q{Email}
-   \end{Form}
- \end{document}
+
+\maketitle
+
+\begin{Form}
+
+\sbox\TBox{Nom }
+\TextField[name=Nom,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.5\linewidth-\wd\TBox] {Nom}
+\sbox\TBox{Prénom }
+\TextField[name=Prenom,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.5\linewidth-\wd\TBox]{Prénom}\\
+
+\sbox\TBox{Date de naissance }
+\TextField[name=naissance,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.5\linewidth-\wd\TBox]{Date de naissance}
+\sbox\TBox{Téléphone fixe }
+\TextField[name=naissance,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.5\linewidth-\wd\TBox]{Téléphone fixe}\\
+
+
+\sbox\TBox{Adresse }
+\TextField[name=adresse,borderstyle=U,bordercolor=gray,
+			width=\dimexpr\linewidth-\wd\TBox]{Adresse}\\
+
+\sbox\TBox{Code postal }
+\TextField[name=codepostal,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.5\linewidth-\wd\TBox]{Code postal}
+\sbox\TBox{Commune }
+\TextField[name=commune,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.5\linewidth-\wd\TBox]{Commune}\\
+
+\sbox\TBox{Tuteur/Tutrice 1 }
+\TextField[name=tuteur1,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.7\linewidth-\wd\TBox]{Tuteur/Tutrice 1}
+\sbox\TBox{Portable 1 }
+\TextField[name=portable1,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.3\linewidth-\wd\TBox]{Portable 1}\\
+
+\sbox\TBox{Tuteur/Tutrice 2 }
+\TextField[name=tuteur2,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.7\linewidth-\wd\TBox]{Tuteur/Tutrice 2}
+\sbox\TBox{Portable 2 }
+\TextField[name=portable2,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.3\linewidth-\wd\TBox]{Portable 2}\\
+
+\sbox\TBox{Numéro de sécurité sociale du responsable }%
+\TextField[name=secu,borderstyle=U,bordercolor=gray,
+			width=\dimexpr\linewidth-\wd\TBox]
+			{Numéro de sécurité sociale du responsable}\\
+
+\sbox\TBox{Adresse email }
+\TextField[name=email,borderstyle=U,bordercolor=gray,
+			width=\dimexpr\linewidth-\wd\TBox]{Adresse email}\\
+
+En cas d'accident prévenir~:\\
+
+\sbox\TBox{Nom }
+\TextField[name=nomaccident1,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.5\linewidth-\wd\TBox]{Nom}
+\sbox\TBox{Téléphone }
+\TextField[name=telephoneaccident1,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.5\linewidth-\wd\TBox]{Téléphone}\\
+
+\sbox\TBox{Nom }
+\TextField[name=nomaccident2,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.5\linewidth-\wd\TBox]{Nom}
+\sbox\TBox{Téléphone }
+\TextField[name=telephoneaccident2,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.5\linewidth-\wd\TBox]{Téléphone}
+
+\subsection*{En cas d'urgence}
+En cas d'urgence, je soussigné
+%\ChoiceMenu[combo,name=city,width=50pt,charsize=12pt,default=père]{\mbox{}}
+%{père, mère, tuteur}
+(père, mère, tuteur, tutrice)
+autorise les responsables de l'association à prendre toutes les mesures
+nécessaires (intervention médicale, chirurgicale,\ldots) concernant l'enfant
+\sbox\TBox{les mesures nécessaires (intervention médicale, chirurgicale,\ldots)
+concernant l'enfant }
+\TextField[name=enfant,borderstyle=U,bordercolor=gray,
+			width=\dimexpr\linewidth-\wd\TBox]{}\\
+
+\sbox\TBox{Date }
+\TextField[name=date1,borderstyle=U,bordercolor=gray,
+			width=\dimexpr0.5\linewidth-\wd\TBox]{Date}
+\sbox\TBox{Signature }
+\TextField[name=signature1,borderstyle=U,bordercolor=gray,borderwidth=0,
+			width=\dimexpr0.5\linewidth-\wd\TBox]{Signature}
+
+\subsection*{Observations}
+\emph{Indications éventuelles relatices à la santé de l'enfant, à la situation
+familiale, etc~:}
+
+\sbox\TBox{}
+\TextField[name=observations,multiline=true,height=4\baselineskip,
+			width=\dimexpr\linewidth-\wd\TBox,borderstyle=U,
+			bordercolor=gray]{}\\
+
+Acceptez-vous la diffusion de photos, de vidéos de votre enfant~?
+\CheckBox[name=oui,height=0.01cm, width=0.4cm,bordercolor=gray]{Oui}
+\CheckBox[name=non,height=0.01cm, width=0.4cm,bordercolor=gray]{Non}\\
+
+\textbf{\textsc{Attention} Les parents s'assureront de la présence de
+l'entraîneur avant de laiser leur enfant.}\\
+
+\TextField[name=faita,borderstyle=U,bordercolor=gray]{Fait à}
+\TextField[name=lieu,borderstyle=U,bordercolor=gray]{le}\\
+
+\TextField[name=signature2,borderstyle=U,bordercolor=gray,
+			borderwidth=0]{Signature}
+
+\end{Form}
+
+\end{document}
+

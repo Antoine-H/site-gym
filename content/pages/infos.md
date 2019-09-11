@@ -15,7 +15,7 @@ entraînement d'essai avant de s'inscrire.
 
 Les documents suivants vous seront demandés pour l'inscription :
 
-- Le formulaire d'inscription rempli.
+- Le [formulaire d'inscription](/files/form.pdf) rempli.
 - Un certificat médical datant de moins d'un an.
 - Un chèque de 150€ à l'ordre de l'USJA Gymnastique Masculine.
 
