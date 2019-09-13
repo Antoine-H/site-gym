@@ -22,7 +22,7 @@
 
 \sbox\TBox{Nom }
 \TextField[name=Nom,borderstyle=U,bordercolor=gray,
-			width=\dimexpr0.5\linewidth-\wd\TBox] {Nom}
+			width=\dimexpr0.5\linewidth-\wd\TBox]{Nom}
 \sbox\TBox{Prénom }
 \TextField[name=Prenom,borderstyle=U,bordercolor=gray,
 			width=\dimexpr0.5\linewidth-\wd\TBox]{Prénom}\\
@@ -33,7 +33,6 @@
 \sbox\TBox{Téléphone fixe }
 \TextField[name=fixe,borderstyle=U,bordercolor=gray,
 			width=\dimexpr0.5\linewidth-\wd\TBox]{Téléphone fixe}\\
-
 
 \sbox\TBox{Adresse }
 \TextField[name=adresse,borderstyle=U,bordercolor=gray,
@@ -114,13 +113,17 @@ familiale, etc~:}
 			bordercolor=gray]{}\\
 
 Acceptez-vous la diffusion de photos, de vidéos de votre enfant~?
-\CheckBox[name=oui,height=0.01cm, width=0.4cm,bordercolor=gray]{Oui}
-\CheckBox[name=non,height=0.01cm, width=0.4cm,bordercolor=gray]{Non}\\
+\CheckBox[name=oui,height=0.01cm,width=0.4cm,bordercolor=gray]{Oui}
+\CheckBox[name=non,height=0.01cm,width=0.4cm,bordercolor=gray]{Non}\\
+
+%\ChoiceMenu[radio,name=diffusion,height=0.01cm,width=0.4cm,bordercolor=gray]
+%{Acceptez-vous la diffusion de pohtos, de vidéos de votre enfant~?}{Oui,Non}\\
+%https://github.com/ho-tex/hyperref/issues/3
 
 \textbf{\textsc{Attention} Les parents s'assureront de la présence de
-l'entraîneur avant de laiser leur enfant.}\\
+l'entraîneur avant de laisser leur enfant.}\\
 
-\TextField[name=faita,borderstyle=U,bordercolor=gray]{Fait à}
+\TextField[name=faita,borderstyle=U,bordercolor=gray,width=5cm]{Fait à}
 \TextField[name=lieu,borderstyle=U,bordercolor=gray]{le}\\
 
 \TextField[name=signature2,borderstyle=U,bordercolor=gray,
