@@ -42,7 +42,12 @@ EXTRA_PATH_METADATA = {
     'static/robots.txt': {'path': 'robots.txt'},
 }
 PLUGIN_PATHS = ["plugins", ]
-PLUGINS = ["include_assets", ]
+PLUGINS = ["include_assets", "sitemap", ]
+
+SITEMAP = {
+    'format': "xml"
+}
+
 #ARTICLE_EXCLUDES = ['documents', ]
 #PAGE_EXCLUDES = ['documents', ]
 
