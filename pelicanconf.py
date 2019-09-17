@@ -12,9 +12,9 @@ SITEURL = 'https://gym.carquefou.fr'
 PATH = 'content'
 
 TIMEZONE = 'Europe/Paris'
-DEFAULT_DATE_FORMAT = ('%d %B %Y')
-
 DEFAULT_LANG = 'fr'
+
+DEFAULT_DATE_FORMAT = ('%d %B %Y')
 
 DEFAULT_PAGINATION = False
 
