@@ -19,6 +19,7 @@ all: $(CONTENT) pelicanconf.py
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 	rm -rf __pycache__/
+	rm -rf plugins/__pycache__/
 
 install:
 	/usr/bin/apt install pelican markdown
