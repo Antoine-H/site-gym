@@ -23,6 +23,7 @@ clean:
 
 install:
 	/usr/bin/apt install pelican markdown
+	# sudo pacman -S pelican python-markdown
 
 test:
 	$(PELICAN) --autoreload --listen
