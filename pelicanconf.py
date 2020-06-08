@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+""" Pelican configuration file """
+
 from __future__ import unicode_literals
 
 AUTHORS = (
@@ -15,7 +17,7 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'fr'
 DEFAULT_DATE_FORMAT = ('%d %B %Y')
 
-#DEFAULT_PAGINATION = False
+# DEFAULT_PAGINATION = False
 
 THEME = "theme"
 
@@ -47,8 +49,7 @@ SITEMAP = {
     'format': "xml"
 }
 
-#ARTICLE_EXCLUDES = ['documents', ]
-#PAGE_EXCLUDES = ['documents', ]
+# ARTICLE_EXCLUDES = ['documents', ]
+# PAGE_EXCLUDES = ['documents', ]
 
-#RELATIVE_URLS = True
-
+# RELATIVE_URLS = True
