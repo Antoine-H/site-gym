@@ -32,7 +32,7 @@ MENUITEMS = (
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
-DIRECT_TEMPLATES = ['index', 'blog']
+DIRECT_TEMPLATES = ['blog']
 
 STATIC_PATHS = ['images',
                 'assets',
