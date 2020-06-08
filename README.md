@@ -46,3 +46,7 @@ Commit a markdown file to /content/articles/
 Download a new version, extract it to content/assets/. Keep only leaflet.js,
 leaflet.css and images/
 
+### Update plugins
+
+Copy from from https://github.com/pelican-plugins
+
