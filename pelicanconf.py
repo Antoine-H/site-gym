@@ -16,6 +16,7 @@ PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'fr'
 DEFAULT_DATE_FORMAT = ('%d %B %Y')
+LOCALE = {'fr_FR.utf8'}
 
 # DEFAULT_PAGINATION = False
 
