@@ -2,8 +2,8 @@ Title: À propos du club
 Slug: infos
 save_as: infos.html
 image: /images/infos/club.jpg
-javascripts: https://unpkg.com/leaflet@1.5.1/dist/leaflet.js, /map/main.js
-stylesheets: https://unpkg.com/leaflet@1.5.1/dist/leaflet.css, /map/main.css
+javascripts: leaflet.js, /map/main.js
+stylesheets: leaflet.css, /map/main.css
 
 ## Inscriptions
 
