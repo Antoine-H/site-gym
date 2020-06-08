@@ -1,6 +1,7 @@
 Title: À propos du club
 Slug: infos
 save_as: infos.html
+url: infos.html
 image: /images/infos/club.jpg
 javascripts: leaflet.js, /map/main.js
 stylesheets: leaflet.css, /map/main.css
