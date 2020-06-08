@@ -49,6 +49,10 @@ SITEMAP = {
     'format': "xml"
 }
 
+# Prevents the creation of /category/ and /authors/
+AUTHOR_SAVE_AS = ''
+CATEGORY_SAVE_AS = ''
+
 # ARTICLE_EXCLUDES = ['documents', ]
 # PAGE_EXCLUDES = ['documents', ]
 
