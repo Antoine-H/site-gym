@@ -1,5 +1,5 @@
 Title: Reprise Septembre 2020
-Slug: Reprise
+Slug: reprise
 Date: 2020-06-06
 Accroche: Reprise des entraînements en Septembre 2020
 Image: /images/vacances/vacances.jpg
