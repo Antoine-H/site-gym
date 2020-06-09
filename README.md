@@ -50,3 +50,8 @@ leaflet.css and images/
 
 Copy from from https://github.com/pelican-plugins
 
+### TODO
+
+- Add support for <meta name=description" content="" /> in the theme
+- Remove unused css
+
