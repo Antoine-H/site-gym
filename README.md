@@ -54,4 +54,7 @@ Copy from from https://github.com/pelican-plugins
 
 - Add support for <meta name=description" content="" /> in the theme
 - Remove unused css
+- Update theme
+- Update plugin/include_assets.py to
+  https://github.com/getpelican/pelican-plugins/tree/master/assets ?
 
