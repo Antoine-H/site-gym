@@ -58,3 +58,7 @@ Copy from from https://github.com/pelican-plugins
 - Update plugin/include_assets.py to
   https://github.com/getpelican/pelican-plugins/tree/master/assets ?
 
+### Make test
+
+When running `make test`, connect to http://localhost:8000/
+
