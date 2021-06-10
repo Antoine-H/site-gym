@@ -26,7 +26,7 @@ MENUITEMS = (
     ('Accueil', '/index.html', 'mobile'),
     ('Actualités', '/blog.html', 'mobile'),
     ('Informations', '/infos.html', 'mobile'),
-    ('Contact', '/index.html#contact', 'wide'),
+    ('Contact', '#contact', 'wide'),
 )
 
 DISPLAY_PAGES_ON_MENU = False
