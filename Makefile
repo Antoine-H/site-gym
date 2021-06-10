@@ -4,6 +4,7 @@ BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
+CONFFILETEST=$(BASEDIR)/pelicanconf_test.py
 PELICAN=/usr/bin/pelican
 
 CONTENT=$(shell find content/ -name '*')
@@ -26,7 +27,7 @@ install:
 	# sudo pacman -S pelican python-markdown
 
 test:
-	$(PELICAN) --autoreload --listen
+	$(PELICAN) -s $(CONFFILETEST) --autoreload --listen
 
 .PHONY: all clean install test
 
