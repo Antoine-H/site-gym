@@ -9,7 +9,7 @@ AUTHORS = (
 )
 
 SITENAME = 'Carquefou gymnastique masculine'
-SITEURL = 'https://gym.carquefou.fr'
+SITEURL = 'https://www.carquefougym.fr'
 
 PATH = 'content'
 
