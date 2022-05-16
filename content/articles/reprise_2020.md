@@ -10,7 +10,7 @@ Authors: Antoine
 Les entraînements ont repris.
 
 Vous pouvez de nouveau venir vous entraîner à [la salle du
-tremplin](https://carquefougym.fr/infos.html#map), le mardi de 17h30 à 19h30
+tremplin](https://www.carquefougym.fr/infos.html#map), le mardi de 17h30 à 19h30
 et le vendredi de 17h45 à 19h45.
 
 À bientôt
