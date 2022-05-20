@@ -23,10 +23,13 @@ LOCALE = {'fr_FR.utf8'}
 THEME = "theme"
 
 MENUITEMS = (
-    ('Accueil', '/index.html', 'mobile'),
-    ('Actualités', '/blog.html', 'mobile'),
-    ('Informations', '/infos.html', 'mobile'),
+    ('Accueil', '/index.html', 'wide'),
+    ('Actualités', '/blog.html', 'wide'),
+    ('Informations', '/infos.html', 'wide'),
     ('Contact', '#contact', 'wide'),
+    ('Accueil', '/index.html', 'mobile'),
+    ('Actus', '/blog.html', 'mobile'),
+    ('Infos', '/infos.html', 'mobile'),
 )
 
 DISPLAY_PAGES_ON_MENU = False

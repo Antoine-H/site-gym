@@ -31,8 +31,10 @@
               <a href="index.html">USJA gymnastique masculine</a>
             </h1>
             <nav class="menu-wide">
-                {% for title, link, _ in MENUITEMS %}
+                {% for title, link, type in MENUITEMS %}
+                {% if type == "wide" %}
                 <a href="{{ link }}"{% if link == '/' + output_file %} class="menu-{{ type }} active"{% endif %}>{{ title }}</a>
+                {% endif %}
                 {% endfor %}
             </nav>
             <nav class="menu-mobile">
