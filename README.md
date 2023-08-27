@@ -60,5 +60,5 @@ Copy from from https://github.com/pelican-plugins
 
 ### Make test
 
-When running `make test`, connect to http://localhost:8000/
+When running `make test`, connect to http://127.0.0.1:8000/
 
