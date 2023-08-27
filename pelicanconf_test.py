@@ -9,7 +9,7 @@ AUTHORS = (
 )
 
 SITENAME = 'Carquefou gymnastique masculine'
-SITEURL = 'http://localhost:8000'
+SITEURL = 'http://127.0.0.1:8000'
 
 PATH = 'content'
 
