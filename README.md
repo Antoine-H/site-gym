@@ -44,7 +44,7 @@ Commit a markdown file to /content/articles/
 ### Update leaflet
 
 Download a new version, extract it to content/assets/. Keep only leaflet.js,
-leaflet.css and images/
+leaflet.css, leaflet.js.map and images/
 
 ### Update plugins
 
